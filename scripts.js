@@ -1,5 +1,8 @@
 $( document ).ready(function() {
   console.log( "ready!" );
+  console.log("What did you're coworker say to you're pseudocode?")
+
+
   hideElements()
   //hide elements
   function hideElements(){
@@ -42,6 +45,7 @@ $( document ).ready(function() {
  //end append data function
   
 
+
 //search button 
 $('button').on('click', function (event){
   event.preventDefault()
@@ -49,6 +53,9 @@ $('button').on('click', function (event){
   // var saveCity = localStorage.setItem(keyname, value)
   var city = $('input').val();
   var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=14953bc813c991ed3bfed89ef9581de7"
+
+
+  console.log("What a crappy comment ;)")
 
 //api call 
   $.ajax({
@@ -81,5 +88,4 @@ $('button').on('click', function (event){
 
 
 
-  
 }); 
