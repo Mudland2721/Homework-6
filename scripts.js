@@ -1,8 +1,11 @@
 $( document ).ready(function() {
   console.log( "ready!" );
+  hideElements()
   //hide elements
+  function hideElements(){
   $(".jumbotron").hide();
   $(".fiveDayForecast").hide();
+  }
   //show elements
   function showElements() {
     $(".jumbotron").show();
