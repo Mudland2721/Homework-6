@@ -16,7 +16,7 @@ $( document ).ready(function() {
   }
 
   
-
+  //append Data to the window
   function appendData(response) {
     var getCity = response.city.name
     var temp = response.list[0].main.temp
