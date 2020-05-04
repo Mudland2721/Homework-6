@@ -1,11 +1,23 @@
 $( document ).ready(function() {
   console.log( "ready!" );
+  //hide elements
+  $(".jumbotron").hide();
+  $(".fiveDayForecast").hide();
+  //show elements
+  function showElements() {
+    $(".jumbotron").show();
+    $(".fiveDayForecast").show();
+  }
+
+  
 
   function appendData(response) {
     var getCity = response.city.name
     var temp = response.list[0].main.temp
-    var humidity = response.list[0].main.humidity
-    var forecast = response.list[0].weather[0].main
+    var humidity = "Humidity:" + " " + response.list[0].main.humidity 
+    var forecast = "Forecast:" + " " + response.list[0].weather[0].main
+    var getTemp = Math.floor(((temp-273.15)*1.8)+32) + " " + "Degrees" + " " + "Fahrenheit"	
+
     console.log(getCity)
     console.log(temp)
     console.log(humidity)
@@ -14,13 +26,14 @@ $( document ).ready(function() {
     //hot tip maybe move the appendData fun out of ajax just the call 
 
     // $("#mainCity").css("font-size", "larger")
-    document.getElementById('mainCity').style.fontSize = 'large';
-    $(".display-4").replaceWith(getCity).text
-    $("#Temp").replaceWith(temp).text
-    $("#humidity").replaceWith(humidity).text
-    $("#forecast").replaceWith(forecast).text
+    // document.getElementById('mainCity').style.fontSize = 'large';
 
+    $(".display-4").append(getCity).text
+    $("#Temp").append(getTemp).text
+    $("#humidity").append(humidity).text
+    $("#forecast").append(forecast).text
 
+    showElements()
 
  }
  //end append data function
@@ -31,9 +44,7 @@ $('button').on('click', function (event){
   event.preventDefault()
   // save to local storage
   // var saveCity = localStorage.setItem(keyname, value)
-  // append
   var city = $('input').val();
-  // console.log(city) 
   var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=14953bc813c991ed3bfed89ef9581de7"
 
 //api call 
@@ -48,7 +59,7 @@ $('button').on('click', function (event){
   }
     clearSearch()
     appendData(res)
-
+    
 
 
 
