@@ -1,0 +1,59 @@
+header {
+  background-color: #2ecc40;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1 {
+  color: white;
+}
+
+.historyBtn {
+  background-color: #2ecc40;
+  color: white;
+}
+
+.form-group {
+  background-color: #2ecc40;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.currentcard {
+  background-color: #2ecc40;
+  color: white;
+}
+
+.box {
+  background-color: #2ecc40;
+}
+
+.card {
+  background-color: #2ecc40;
+}
+
+#search-term {
+  color: white;
+}
+
+.container {
+  color: white;
+}
+
+.card-body {
+  margin-left: 10px;
+  background-color: #2ecc40;
+}
+
+#uv {
+  background-color: #2ecc40;
+  border: none;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1536532184021-da5392b55da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-position: center;
+}
