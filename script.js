@@ -6,7 +6,7 @@ if (localStorage.getItem("searchHistory")) {
   console.log(searchHistory);
   for (let i = 0; i < searchHistory.length; i++) {
     var newBtn = $(
-      "<button class='btn btn-link btn-lg active historyBtn'>"
+      "<button id='historyBtn' class='btn btn-link btn-lg active historyBtn'>"
     ).text(titleCase(searchHistory[i]));
     recentSearches.append(newBtn);
   }
@@ -129,31 +129,31 @@ function getWeather(city) {
         }
         checkUV(uvEl);
 
-        // need to display temperature to the forcast
+        // need to display temperature to the forecast
         $("#0day-temp").text(
           "Temp: " +
-            ((response.daily[0].temp.day - 273.15) * 1.8 + 32).toFixed(1) +
-            "F"
+          ((response.daily[0].temp.day - 273.15) * 1.8 + 32).toFixed(1) +
+          "F"
         );
         $("#1day-temp").text(
           "Temp: " +
-            ((response.daily[1].temp.day - 273.15) * 1.8 + 32).toFixed(1) +
-            "F"
+          ((response.daily[1].temp.day - 273.15) * 1.8 + 32).toFixed(1) +
+          "F"
         );
         $("#2day-temp").text(
           "Temp: " +
-            ((response.daily[2].temp.day - 273.15) * 1.8 + 32).toFixed(1) +
-            "F"
+          ((response.daily[2].temp.day - 273.15) * 1.8 + 32).toFixed(1) +
+          "F"
         );
         $("#3day-temp").text(
           "Temp: " +
-            ((response.daily[3].temp.day - 273.15) * 1.8 + 32).toFixed(1) +
-            "F"
+          ((response.daily[3].temp.day - 273.15) * 1.8 + 32).toFixed(1) +
+          "F"
         );
         $("#4day-temp").text(
           "Temp: " +
-            ((response.daily[4].temp.day - 273.15) * 1.8 + 32).toFixed(1) +
-            "F"
+          ((response.daily[4].temp.day - 273.15) * 1.8 + 32).toFixed(1) +
+          "F"
         );
 
         // display my icons

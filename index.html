@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--CSS-->
-    <link rel="stylesheet" href="Assets/style.css"/>
+    <link rel="stylesheet" href="Assets/style.css" />
 </head>
 
 <body>
@@ -15,7 +17,7 @@
         <h1>Weather Dashboard</h1>
     </header>
 
-        <!--search section-->
+    <!--search section-->
     <div class="container">
         <div class="row">
             <div class="col-6 col-md-4 card">
@@ -30,83 +32,83 @@
                 </form>
                 <section class="row" id="recent-searches"></section>
             </div>
-        <!--search section-->        
-            
+            <!--search section-->
+
             <main class="col-md-8 card">
                 <!--Current City Section-->
                 <section>
-                    <div class="container"> 
-                    <div class="row col-md-12 card" id="maindiv"> 
-                        <div class="col-md-8 currentcard" id="weather-today"> 
-                            <h2 class="ml-2 mt-3" id="city"></h2>
-                            <h4 id="today-date" class="mb-4 ml-2 mt-1"></h4>
-                            <h6 class="mb-4 ml-2" id="temp"> </h6>
-                            <h6 class="mb-4 ml-2" id="humidity"></h6>
-                            <h6 class="mb-4 ml-2" id="wind"></h6>
-                            <h6 class="mb-4 ml-2 card" text id="uv" class="card"> </h6>
-                            <div class="col-md-2 icon"><img id="today-icon" src=""></div>
-                            
-                        </div>                                                                    
+                    <div class="container">
+                        <div class="row col-md-12 card" id="maindiv">
+                            <div class="col-md-8 currentcard" id="weather-today">
+                                <h2 class="ml-2 mt-3" id="city"></h2>
+                                <h4 id="today-date" class="mb-4 ml-2 mt-1"></h4>
+                                <h6 class="mb-4 ml-2" id="temp"> </h6>
+                                <h6 class="mb-4 ml-2" id="humidity"></h6>
+                                <h6 class="mb-4 ml-2" id="wind"></h6>
+                                <h6 class="mb-4 ml-2 card" text id="uv" style="color: white;" class="card"> </h6>
+                                <div class="col-md-2 icon"><img id="today-icon" src=""></div>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!--Current City Ends-->    
-                    
-                <!--My Five Days Forecast--> 
-                            <section id="5day-forecast">
-                                <h2 class="row mt-3 ml-2 mb-4">5-Day Forecast</h2>
-                                <div class="row">
-                                    <div class="box card">
+                    <!--Current City Ends-->
 
-                                        <div class="card-body">
-                                            <h6 id="0day-date"></h6>
-                                            <div class="row"><img id="0day-icon"></div>
-                                            <text class="row" id="0day-temp"> </text>
-                                            <text class="row" id="0day-humidity"> </text> 
-                                        </div>
+                    <!--My Five Days Forecast-->
+                    <section id="5day-forecast">
+                        <h2 class="row mt-3 ml-2 mb-4">5-Day Forecast</h2>
+                        <div class="row">
+                            <div class="box card">
 
-                                    </div>
-                                        <div class="box card">
-
-                                        <div class="card-body">
-                                            <h6 id="1day-date"></h6>
-                                            <div class="row"><img id="1day-icon"></div>
-                                            <text class="row" id="1day-temp"> </text>
-                                            <text class="row" id="1day-humidity"> </text> 
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="box card">
-
-                                        <div class="card-body">
-                                            <h6 id="2day-date"></h6>
-                                            <div class="row"><img id="2day-icon"></div>
-                                            <text class="row" id="2day-temp"></text>
-                                            <text class="row" id="2day-humidity"> </text> 
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="box card">
-
-                                        <div class="card-body">
-                                            <h6 id="3day-date"></h6>
-                                            <div class="row"><img id="3day-icon"></div>
-                                            <text class="row" id="3day-temp"></text>
-                                            <text class="row" id="3day-humidity"> </text>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="box card">
-
-                                        <div class="card-body">
-                                            <h6 id="4day-date"></h6>
-                                            <div class="row"><img id="4day-icon"></div>
-                                            <text class="row" id="4day-temp"></text>
-                                            <text class="row"id="4day-humidity"> </text>
-                                        </div>                                        
-                                    </div>
+                                <div class="card-body">
+                                    <h6 id="0day-date"></h6>
+                                    <div class="row"><img id="0day-icon"></div>
+                                    <text class="row" id="0day-temp"> </text>
+                                    <text class="row" id="0day-humidity"> </text>
                                 </div>
-                        </section>    
-                        <!--Five Days forecast-->       
+
+                            </div>
+                            <div class="box card">
+
+                                <div class="card-body">
+                                    <h6 id="1day-date"></h6>
+                                    <div class="row"><img id="1day-icon"></div>
+                                    <text class="row" id="1day-temp"> </text>
+                                    <text class="row" id="1day-humidity"> </text>
+                                </div>
+
+                            </div>
+                            <div class="box card">
+
+                                <div class="card-body">
+                                    <h6 id="2day-date"></h6>
+                                    <div class="row"><img id="2day-icon"></div>
+                                    <text class="row" id="2day-temp"></text>
+                                    <text class="row" id="2day-humidity"> </text>
+                                </div>
+
+                            </div>
+                            <div class="box card">
+
+                                <div class="card-body">
+                                    <h6 id="3day-date"></h6>
+                                    <div class="row"><img id="3day-icon"></div>
+                                    <text class="row" id="3day-temp"></text>
+                                    <text class="row" id="3day-humidity"> </text>
+                                </div>
+
+                            </div>
+                            <div class="box card">
+
+                                <div class="card-body">
+                                    <h6 id="4day-date"></h6>
+                                    <div class="row"><img id="4day-icon"></div>
+                                    <text class="row" id="4day-temp"></text>
+                                    <text class="row" id="4day-humidity"> </text>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Five Days forecast-->
             </main>
         </div>
     </div>
@@ -119,4 +121,5 @@
     <!--Javascript-->
     <script src="./script.js"></script>
 </body>
+
 </html>
